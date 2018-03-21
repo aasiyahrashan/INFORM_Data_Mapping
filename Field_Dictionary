@@ -31,7 +31,7 @@ destination_hierachy - the location of the field in the hierachy of the destinat
   
 valid - is this mapping currently valid? Takes the value 1 if mapping is valid, 0 if not.
 date_modified - when was the mapping last edited? will be a date field DD/MM/YYYY
-modified_by - who edited this mapping? Name.
+modified_by - who edited this mapping? 
 
 
   
