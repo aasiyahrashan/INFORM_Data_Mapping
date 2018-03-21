@@ -1,0 +1,66 @@
+Dictionary for the variables in the main mapping dataset. 
+
+
+e_UI - unique identifier created for the mapping, which uniquely identifies a field.
+
+human_readable_name - will be the description related to the e_UI. Currently empty. Will assign names later.
+
+snomed code - snomed unique identifier which we are eventually want to use to replace the e_UI
+
+destination - terminology the field is being mapped to - can currently be ICNARC, HICDS1, ICIP. SNOMED has to be mapped. 
+              have no data for it yet.
+
+destination_id - term used for to identify the field in the destination terminology. 
+  if destination = ICNARC, the code in the field is the ICNARC field label
+  if destination = HICDS1, the code in the field is the CCHIC id code
+  if destination = ICIP, the code in the field is the ICIP label. It was named ICNARC_ICIP_Map in the old dataset.
+  if destination = SNOMED, the code in the field will be the SNOMED concept id.
+
+destination_name - the full name of the field in the destination terminology used. 
+  if destination = ICNARC, the name will be the icnarc full name
+  if destination = HICDS1, the name will be the CCHIC long name
+  if destination = ICIP, the field should be blank since there is currently no long name.
+  if destination = SNOMED, the name will be the SNOMED fully specified name.
+  
+destination_hierachy - the location of the field in the hierachy of the destination terminology.
+  if destination = ICNARC, it will be the name of the icnarc section
+  if destination = HICDS1, it will be the HIC clinical tag.
+  if destination = ICIP, the field should be blank.
+  if destination = SNOMED, it will be the location of the field in the snomed hierachy.
+  
+  
+valid - is this mapping currently valid? Takes the value 1 if mapping is valid, 0 if not.
+date_modified - when was the mapping last edited? will be a date field DD/MM/YYYY
+modified_by - who edited this mapping? Name.
+
+
+  
+  
+  
+  
+  
+  Variables which were in the original dataset which were deleted. Most of these were deleted because they are incorrect/empty
+  snomed mappings. 
+  ds1_NHICdtCode 
+  ds1_NHICmetaCode_i_concept_code_OHDSI 
+  i_concept_name_OHDSI 
+  i_domain_id_OHDSI 
+  i_concept_class_id_OHDSI 
+  snomed_parent 
+  snomed_code 
+  snomed_name 
+  i_UI c_UI
+  
+  
+  
+  
+  Variables which were in the original dataset which should be moved into a data specification file. 
+     ds1_Units 
+     ds1_Datatype 
+     ds1_Template 
+     ds1_Reference_ranges 
+     ds1_UCHsource 
+     ds1_Timing 
+     ds1_label1UCH 
+     ds1_label2UCH 
+
