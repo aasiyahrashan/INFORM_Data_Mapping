@@ -5,8 +5,6 @@ e_UI - unique identifier created for the mapping, which uniquely identifies a fi
 
 human_readable_name - will be the description related to the e_UI. Currently empty. Will assign names later.
 
-snomed code - snomed unique identifier which we are eventually want to use to replace the e_UI
-
 destination - terminology the field is being mapped to - can currently be ICNARC, HICDS1, ICIP. SNOMED has to be mapped. 
               have no data for it yet.
 
